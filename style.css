@@ -312,7 +312,7 @@ form btn2{
     margin-top: 20px;
 }
 /*-----------css for small screens----------- */
-nav .fa-xmark{
+nav .fa{
     display: none;
 }
 
@@ -327,7 +327,7 @@ nav .fa-xmark{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa-xmark{
+    nav .fa{
     display: block;
     font-size: 25px;
     }
@@ -345,7 +345,7 @@ nav .fa-xmark{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-xmark{
+    nav ul .fa{
         position: absolute;
         top: 25px;
         left: 25px;
