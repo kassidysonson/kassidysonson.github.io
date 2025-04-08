@@ -212,7 +212,7 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycby8uNAWIwR3mBrPjC35KQirom9Z35_lwwmTnUv9pexQ8CPfhE-47z_udk-oH37n9ani/exec'
   const form = document.forms['submit-to-google-sheet']
-  const msg = documeny.getElementById(msg)  
+  const msg = document.getElementById("msg")  
 
   form.addEventListener('submit', e => {
     e.preventDefault()
