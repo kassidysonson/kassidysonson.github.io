@@ -312,7 +312,7 @@ form btn2{
     margin-top: 20px;
 }
 /*-----------css for small screens----------- */
-nav .fa{
+nav .fa-solid fa-xmark, nav .fa-solid fa-bars{
     display: none;
 }
 
