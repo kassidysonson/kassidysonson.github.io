@@ -316,7 +316,7 @@ nav .fa{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-device-width: 600px){
     #header{
         background-image: url(https://i.im.ge/2025/04/08/pcgnGm.phone-background.png);
     }
