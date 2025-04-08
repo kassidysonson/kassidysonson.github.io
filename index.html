@@ -167,7 +167,7 @@
                 <a href="https://allergy-nose-46.ezihost.net" Download class="btn btn2">Download Resume</a>
             </div>            
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -209,6 +209,16 @@
         sidemenu.style.right = "-200px";
     }
 </script>
-    
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby8uNAWIwR3mBrPjC35KQirom9Z35_lwwmTnUv9pexQ8CPfhE-47z_udk-oH37n9ani/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>    
 </body>
 </html>
