@@ -328,7 +328,8 @@ nav .fa-bars{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa{
+    nav .fa-xmark, 
+    nav .fa-bars{
     display: block;
     font-size: 25px;
     }
